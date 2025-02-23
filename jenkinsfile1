@@ -3,6 +3,9 @@ pipeline {
     options {
         buildDiscarder (  logRotator(numToKeepStr:'5'))
     }
+    tools {
+        maven 'M2_HOME'
+    }
 
 
     stages {
